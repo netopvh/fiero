@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Domains\Frontend\Providers;
+namespace App\Domains\Access\Providers;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 
-class RouteServiceProvider extends ServiceProvider
+class AccessServiceProvider extends ServiceProvider
 {
     /**
      * This namespace is applied to your controller routes.
@@ -14,7 +14,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    protected $namespace = 'App\Domains\Frontend\Controllers';
+    protected $namespace = 'App\Domains\Access\Controllers';
 
     /**
      * Define your route model bindings, pattern filters, etc.
@@ -53,7 +53,7 @@ class RouteServiceProvider extends ServiceProvider
     {
         Route::middleware('web')
              ->namespace($this->namespace)
-             ->group(app_path('Domains/Frontend/Routes/web.php'));
+             ->group(app_path('Domains/Access/Routes/web.php'));
     }
 
     /**
@@ -68,6 +68,6 @@ class RouteServiceProvider extends ServiceProvider
         Route::prefix('api')
              ->middleware('api')
              ->namespace($this->namespace)
-             ->group(app_path('Domains/Frontend/Routes/api.php'));
+             ->group(app_path('Domains/Access/Routes/api.php'));
     }
 }

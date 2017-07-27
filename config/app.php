@@ -179,9 +179,9 @@ return [
 
         //Modules
             //Access
-        App\Domains\Access\Providers\RouteServiceProvider::class,
+        App\Domains\Access\Providers\AccessServiceProvider::class,
             //Frontend
-        App\Domains\Frontend\Providers\RouteServiceProvider::class,
+        App\Domains\Frontend\Providers\FrontendServiceProvider::class,
 
     ],
 
