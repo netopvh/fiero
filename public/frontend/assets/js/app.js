@@ -14,13 +14,55 @@ function getUrl() {
 $(function () {
 
     $(document).ready(function () {
-        $('.bxslider').bxSlider({
-            mode: 'fade',
+
+        var slider = $('.bxslider').bxSlider({
             auto: true,
-            autoControls: true,
-            pause: 3000
+            autoHover: true,
+            slideMargin: 0,
+            pause: 4000,
+            captions: true,
+            controls: true,
+            pager: false
+        });
+        $('.bx-controls-direction').hide();
+        var box = $('.bx-wrapper');
+        box.mouseover(function () {
+            $('.bx-controls-direction').show();
+        });
+        box.mouseleave(function () {
+            $('.bx-controls-direction').hide();
+        });
+
+        $('.news-slide').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            arrows: false
+        });
+        $(".video-slider").lightSlider({
+            pager: false,
+            responsive : [
+                {
+                    breakpoint:800,
+                    settings: {
+                        item:1,
+                        slideMove:1,
+                        slideMargin:6
+                    }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:2,
+                        slideMove:1
+                    }
+                }
+            ]
         });
     });
+
+
+
 
     //Validation
     var validator = $(".form-validate").validate({

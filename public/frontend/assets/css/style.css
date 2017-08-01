@@ -1,6 +1,6 @@
 .top-bar{
-    background:#0066B3;
-    border-color:#00661b !important
+    background:#1F3241;
+    border-color:#1F3241 !important
 }
 .casa-color,.casa-color *,.casa-color a:hover,.casa-color-hover:hover,
 a:hover,.active-item,.page-links .p-links-hold>span .logo-sistema-s,
@@ -31,7 +31,7 @@ a:hover,.active-item,.page-links .p-links-hold>span .logo-sistema-s,
 }
 .casa-color-bg-dark,.footer-mid,.slider #slider-thumbs .bts li.active,
 .bt-color:hover,.bt-color-3:hover{
-    background:#121F2E !important
+    background:#121C25 !important
 }
 .slider #slider-thumbs .bts li,.carousel-indicators li.active{
     border-color:#007a20
@@ -115,14 +115,15 @@ input:focus,select:focus,textarea:focus,button:focus{
     text-decoration:none
 }
 #mainHeader .logo-page{
-    max-width:300px;
-    width:300px
+    margin-top: 18px;
+    max-width:320px;
+    width:320px
 }
 #noticia .logo-page{
     padding:5px 0 0 0
 }
 .footer-top, .footer-bottom{
-    background: #1B2D43;
+    background: #1F3241;
 }
 .button-sistema-1{
     width: 60px;
